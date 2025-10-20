@@ -1,5 +1,31 @@
 :root > * {
-  --md-primary-fg-color: #193309;
+  --md-primary-fg-color: #162d08;
+}
+
+/* Light theme */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #162d08;
+  --md-accent-fg-color: #025c20;
+  --md-default-bg-color: #F2F2F2;
+  --md-default-fg-color: #111;
+}
+
+[data-md-color-scheme="default"] .md-content {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark theme */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #013512;
+  --md-accent-fg-color: #025c20;
+  --md-default-bg-color: #222222;
+  --md-default-fg-color: #F2F2F2;
+}
+
+[data-md-color-scheme="slate"] .md-content {
+  background-color: #2F2F2F;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Reset base layout */
@@ -17,14 +43,16 @@ html, body {
 
 /* Full-width inner container */
 .md-main__inner {
-  max-width: 100% !important;
+  max-width: 75% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
+  padding-bottom: 2.5% !important;
 }
 
 /* Page content padding */
 .md-content {
   max-width: 100% !important;
+  padding: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -40,8 +68,8 @@ html, body {
 
 /* Align logo/title to far left */
 .md-header__title {
-  margin-left: 1.5rem !important;
-  padding-left: 0 !important;
+  margin-left: 0.5rem !important;
+  padding-left: 0rem !important;
 }
 
 /* Repo link (/documentation-site) to far right */
@@ -55,14 +83,32 @@ html, body {
   justify-content: flex-start !important;
   margin-left: 0 !important;
   padding-left: 0.25rem !important;
-  padding-right: 0.25rem !important;
+  padding-right: 2rem !important;
+}
+
+.md-tabs__item--active,
+.md-tabs__item:focus {
+  border-bottom: 1.5px solid #b5b6b3;
 }
 
 /* Sidebar untouched */
 .md-sidebar--primary,
 .md-sidebar--secondary {
   margin: initial !important;
-  padding: initial !important;
+  padding-top: 1rem !important;
+}
+
+/* Default (unhovered) state: dimmed */
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+/* Hovered state: full brightness */
+.md-sidebar--primary:hover,
+.md-sidebar--secondary:hover {
+  opacity: 1;
 }
 
 /* Center tables optionally */
@@ -89,4 +135,24 @@ blockquote {
 img[src*='#center'] { 
     display: block;
     margin: auto;
+}
+
+.md-typeset h1 {
+  font-weight: 800;
+}
+
+/* Target all table headers in content */
+.md-typeset table th {
+  background-color: #013512; /* header bg color */
+  color: #ffffff;            /* header text color */
+  font-weight: 600;          /* make header text bold */
+  padding: 0.5rem 1rem;      /* padding inside header cells */
+}
+
+/* Add vertical borders to table cells */
+.md-typeset table td {
+  border-right: 1px solid #2F2F2F; /* vertical line */
+  border-left: 1px solid #2F2F2F;
+  border-bottom: 1px solid #2F2F2F;
+  border-top: 1px solid #2F2F2F;
 }

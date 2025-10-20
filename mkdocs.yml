@@ -29,7 +29,6 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-    - header.autohide
 extra:
   social:
     - icon: fontawesome/brands/discord
@@ -41,8 +40,8 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/VATSIM-Saudi-Arabia
 
-repo_url: https://github.com/VATSIM-Saudi-Arabia/documentation-site
-repo_name: VATSIM-Saudi-Arabia/documentation-site
+repo_url: https://github.com/Sinada007/documentation-site
+repo_name: Sinada007/documentation-site
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
