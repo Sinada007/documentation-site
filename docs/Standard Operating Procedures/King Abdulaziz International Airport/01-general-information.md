@@ -1,6 +1,7 @@
 ---
 title: General Information
 ---
+![Loading](imgs/JED.png)
 
 **King Abdulaziz International Airport (OEJN)** is a significant airport serving **Jeddah and Mecca in Saudi Arabia**. It's situated 19 kilometers north of Jeddah and covers an extensive area of 105 square kilometers. Opened in 1981, it replaced the former Kandara Airport and is named after the founder of Saudi Arabia, King Abdulaziz.
 

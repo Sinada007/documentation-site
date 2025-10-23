@@ -1,0 +1,29 @@
+:root > * {
+  --md-primary-fg-color: #162d08;
+}
+
+/* Light theme */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #162d08;
+  --md-accent-fg-color: #025c20;
+  --md-default-bg-color: #F2F2F2;
+  --md-default-fg-color: #111;
+}
+
+[data-md-color-scheme="default"] .md-content {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark theme */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #162d08;
+  --md-accent-fg-color: #025c20;
+  --md-default-bg-color: #181818;
+  --md-default-fg-color: #F2F2F2;
+}
+
+[data-md-color-scheme="slate"] .md-content {
+  background-color: #242424;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}

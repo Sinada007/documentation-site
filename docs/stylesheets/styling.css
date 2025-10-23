@@ -1,0 +1,28 @@
+/* Table rounded corners */
+:root {
+  --table-border-radius: 0.3rem;
+}
+
+.md-typeset table:not([class]) {
+  border-radius:
+var(--table-border-radius);
+  overflow: hidden;
+}
+
+/* Font boldness */
+.md-typeset h1 {
+  font-weight: 800;
+}
+
+/* Target all table headers in content */
+.md-typeset table th {
+  background-color: #013512; /* header bg color */
+  color: #ffffff;            /* header text color */
+  font-weight: 600;          /* make header text bold */
+  padding: 0.5rem 1rem;      /* padding inside header cells */
+}
+
+/* Add vertical borders to table cells */
+.md-typeset table td {
+  border: 1px solid #2F2F2F;
+}

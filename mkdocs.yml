@@ -26,9 +26,12 @@ theme:
     - navigation.tabs
     - navigation.path
     - navigation.top
+    - navigation.tabs.sticky
     - search.suggest
     - search.highlight
     - search.share
+    - content.footer
+    - content.action.edit
 extra:
   social:
     - icon: fontawesome/brands/discord
@@ -44,6 +47,9 @@ repo_url: https://github.com/Sinada007/documentation-site
 repo_name: Sinada007/documentation-site
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/theme.css
+  - stylesheets/effect.css
+  - stylesheets/styling.css
 markdown_extensions:
   - admonition
   - pymdownx.details
